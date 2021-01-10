@@ -1,20 +1,12 @@
 # learn-nuxt-twitter-oauth
 
-## Build Setup
+## About this repository 
 
-```bash
-# install dependencies
-$ npm install
+This repository is a sample app showing use of "Sign in with Twitter" functionality using Firebase.Auth Module
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### Important
+Enable Twitter Authentication in your 
+Firebase Project > Authentication > Sign-in Method
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
