@@ -9,12 +9,14 @@
               Twitter Authentication
             </h1>
           </div>
-          <h2 class="subtitle">Demo on using Twitter Oauth 1.0a</h2>
+          <h2 class="subtitle">
+            Using Nuxtjs & Firebase Auth (Uses OAuth 1.0)
+          </h2>
           <hr />
           <form action="">
             <div class="field">
               <button
-                class="button is-success is-fullwidth is-medium"
+                class="button is-info is-fullwidth is-medium"
                 @click.prevent="signInWithTwitterPopup"
               >
                 <span>Sign In with Twitter (Popup)</span>
@@ -22,7 +24,7 @@
             </div>
             <div class="field">
               <button
-                class="button is-success is-fullwidth is-medium"
+                class="button is-info is-fullwidth is-medium"
                 @click.prevent="signInWithTwitterRedirect"
               >
                 <span>Sign In with Twitter (Redirect)</span>
@@ -32,15 +34,16 @@
           <hr />
           <section class="section">
             <div class="container">
-              <h1 class="title">Authentication Results</h1>
+              <h1 class="title">
+                <fa :icon="['fab', 'twitter']" />
+                Authentication Results
+              </h1>
               <h2 class="subtitle">
                 <hr />
                 <strong>{{ authMessage }}</strong>
                 <hr />
                 {{ authProviderData }}
                 <hr />
-                {{ apiKey }}
-                <p>{{ $config.databaseURL }}</p>
               </h2>
             </div>
           </section>
@@ -58,7 +61,6 @@ export default {
     return {
       authMessage: "...",
       authProviderData: "...",
-      apiKey: "...",
     };
   },
   methods: {
